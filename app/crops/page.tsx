@@ -53,7 +53,7 @@ export default function CropsPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {crops.map(crop => (
           <Link key={crop.id} href={`/crops/${crop.id}`}
-            className="border rounded-lg p-5 hover:shadow-md transition block">
+            className="border-2 border-green-200 bg-white rounded-xl p-5 hover:shadow-lg hover:border-green-500 transition block">
             <div className="text-3xl mb-2">{icons[crop.crop_type] || '🌾'}</div>
             <h2 className="text-lg font-bold capitalize">{crop.crop_type} — {crop.variety}</h2>
             <p className="text-sm text-gray-500">📍 {crop.farms?.district}</p>
