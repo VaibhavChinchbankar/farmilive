@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-green-800 text-white shadow-md">
-      <div className="max-w-5xl mx-auto px-4 py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
+      <div className="w-full px-4 sm:px-8 py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
         <div className="flex justify-between items-center">
           <Link href="/" className="font-bold text-base sm:text-lg flex items-center gap-2">
             🌾 FARMiLIVE
@@ -24,8 +24,10 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="flex justify-between sm:justify-end items-center gap-3 text-xs sm:text-sm">
+        <div className="flex flex-wrap justify-between sm:justify-end items-center gap-x-3 gap-y-1 text-xs sm:text-sm">
           <Link href="/crops" className="hover:text-amber-300">{t('nav_explore')}</Link>
+          <Link href="/#how-it-works" className="hover:text-amber-300">{t('nav_how_works')}</Link>
+          <Link href="/#about" className="hover:text-amber-300">{t('nav_about')}</Link>
           <Link href="/login" className="hover:text-amber-300">{t('nav_login')}</Link>
           <Link href="/signup" className="hover:text-amber-300">{t('nav_signup')}</Link>
 

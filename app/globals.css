@@ -5,6 +5,9 @@
   --farm-green-dark: #14532d;
   --farm-amber: #f59e0b;
   --farm-cream: #fefce8;
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 body {
