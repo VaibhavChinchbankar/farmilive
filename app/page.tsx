@@ -7,17 +7,15 @@ export default function Home() {
   const { t } = useLanguage()
 
   const story = [
-    { img: '/images/wheat-closeup.jpg', title: 'Choose a Crop', desc: 'Pick a real crop growing on a real, verified farm near you.' },
-    { img: '/images/farmer.jpg', title: 'Follow the Journey', desc: 'Get weekly, GPS-verified updates straight from the farmer, from sowing to growth.' },
-    { img: '/images/harvesting.jpg', title: 'Own the Harvest', desc: 'Receive your verified allocation, along with a CropPass™ proving every step of the journey.' },
+    { img: '/images/wheat-closeup.jpg', title: t('story1_title'), desc: t('story1_desc') },
+    { img: '/images/farmer.jpg', title: t('story2_title'), desc: t('story2_desc') },
+    { img: '/images/harvesting.jpg', title: t('story3_title'), desc: t('story3_desc') },
   ]
 
   return (
     <div>
-      <div
-        className="relative h-[28rem] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/images/cultivation.jpg')" }}
-      >
+      <div className="relative h-[28rem] bg-cover bg-center flex items-center justify-center"
+        style={{ backgroundImage: "url('/images/cultivation.jpg')" }}>
         <div className="absolute inset-0 bg-green-900/65" />
         <div className="relative text-center text-white px-6">
           <h1 className="text-6xl md:text-7xl font-extrabold mb-4 drop-shadow-lg tracking-tight">
@@ -30,7 +28,7 @@ export default function Home() {
               {t('nav_explore')}
             </Link>
             <Link href="/signup" className="bg-white text-green-800 px-6 py-2.5 rounded font-semibold">
-              Sign up
+              {t('nav_signup')}
             </Link>
           </div>
         </div>

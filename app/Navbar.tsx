@@ -14,9 +14,7 @@ export default function Navbar() {
           </Link>
           <div className="flex gap-1 sm:hidden">
             {(['en', 'hi', 'mr'] as const).map(l => (
-              <button
-                key={l}
-                onClick={() => setLang(l)}
+              <button key={l} onClick={() => setLang(l)}
                 className={`px-2 py-1 rounded text-xs font-semibold ${
                   lang === l ? 'bg-amber-500 text-white' : 'bg-white/10 text-white/80'
                 }`}>
@@ -33,9 +31,7 @@ export default function Navbar() {
 
           <div className="hidden sm:flex gap-1 border-l border-white/20 pl-3">
             {(['en', 'hi', 'mr'] as const).map(l => (
-              <button
-                key={l}
-                onClick={() => setLang(l)}
+              <button key={l} onClick={() => setLang(l)}
                 className={`px-2 py-1 rounded text-xs font-semibold ${
                   lang === l ? 'bg-amber-500 text-white' : 'bg-white/10 text-white/80'
                 }`}>
